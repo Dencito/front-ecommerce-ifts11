@@ -12,7 +12,10 @@ export class FeedComponent {
     private http: HttpClient) { }
     ngOnInit() {
       this.getProducts()
+      console.log(this.location)
     }
+
+    location:any= window.location.pathname
 
 
     products: any

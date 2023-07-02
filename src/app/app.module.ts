@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FeedComponent } from './feed/feed.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SinglePrdComponent } from './single-prd/single-prd.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SinglePrdComponent } from './single-prd/single-prd.component';
     FooterComponent,
     FeedComponent,
     NavbarComponent,
-    SinglePrdComponent
+    SinglePrdComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
