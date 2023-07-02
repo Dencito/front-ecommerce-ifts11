@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { CreateProductComponent } from './create-product/create-product.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { SinglePrdComponent } from './single-prd/single-prd.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { CreateProductComponent } from './pages/create-product/create-product.component';
+import { EditProductComponent } from './pages/edit-product/edit-product.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SinglePrdComponent } from './pages/single-prd/single-prd.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },

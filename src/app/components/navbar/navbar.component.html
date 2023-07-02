@@ -1,12 +1,12 @@
 <div class="navbar" *ngIf="location == false">
-  <nav class="navbar-left">
-    <div class="navbar-title">THRIFTarg</div>
+  <nav class="navbar-left" (click)="navigateTo()">
+    <div class="navbar-title" >THRIFTarg</div>
   </nav>
 
   <nav class="navbar-right">
     <div class="user-profile" (click)="toggleMenu()">
       <div class="profile-inner">
-        <img src="ruta-a-la-foto-de-usuario" alt="Foto de Usuario" />
+        <img src="https://api.multiavatar.com/Starcrasher.png" alt="Foto de Usuario" />
       </div>
       <div class="menu" [class.open]="isMenuOpen">
         <!-- Contenido del menú -->

@@ -3,17 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CreateProductComponent } from './create-product/create-product.component';
-import { EditProductComponent } from './edit-product/edit-product.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { FooterComponent } from './footer/footer.component';
-import { FeedComponent } from './feed/feed.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SinglePrdComponent } from './single-prd/single-prd.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
+import { CreateProductComponent } from './pages/create-product/create-product.component';
+import { EditProductComponent } from './pages/edit-product/edit-product.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FeedComponent } from './components/feed/feed.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SinglePrdComponent } from './pages/single-prd/single-prd.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
