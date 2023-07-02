@@ -1,0 +1,62 @@
+<div class="container pb-5">
+  <div class="row py-4">
+    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10 col-12" *ngFor="let prod of products">
+      <div class="card mb-3" (click)="navigateToUserProfile(prod._id)">
+        <div class="card-header">{{ prod.name }}</div>
+        <div class="card-image">
+          <img src="{{ prod.image }}" alt="image1122" class="card-img" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  hellskitchen
+                </div>
+                <div class="card-image">
+                  <img src="external/image3126-9o0d-300h.png" alt="image1122" class="card-img" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  hellskitchen
+                </div>
+                <div class="card-image">
+                  <img src="public/external/image2124-8nrk-300h.png" alt="image1122" class="card-img" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  o993en
+                </div>
+                <div class="card-image">
+                  <img src="public/external/image4128-invm-400w.png" alt="image1122" class="card-img" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  o993en
+                </div>
+                <div class="card-image">
+                  <img src="public/external/image6133-05rs-300h.png" alt="image1122" class="card-img" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  o993en
+                </div>
+                <div class="card-image">
+                  <img src="public/external/image5130-gtws-300h.png" alt="image1122" class="card-img" />
+                </div>
+              </div>
+            </div> -->
+  </div>
+</div>

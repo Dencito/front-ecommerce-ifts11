@@ -1,0 +1,19 @@
+<div class="navbar">
+  <nav class="navbar-left">
+    <div class="navbar-title">THRIFTarg</div>
+  </nav>
+
+  <nav class="navbar-right">
+    <div class="user-profile" (click)="toggleMenu()">
+      <div class="profile-inner">
+        <img src="ruta-a-la-foto-de-usuario" alt="Foto de Usuario" />
+      </div>
+      <div class="menu" [class.open]="isMenuOpen">
+        <!-- Contenido del menú -->
+        <a routerLink="/perfil">Perfil</a>
+        <a routerLink="/configuracion">Configuración</a>
+        <a (click)="logout()">Cerrar sesión</a>
+      </div>
+    </div>
+  </nav>
+</div>

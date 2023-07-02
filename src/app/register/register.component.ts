@@ -20,8 +20,10 @@ export class RegisterComponent {
     };
 
     this.http.post(apiUrl, requestBody).subscribe(
-      (response) => {
+      (response:any) => {
         console.log(response);
+        localStorage.setItem('userId', response.user._id);
+        localStorage.setItem('role',  response.user.role);
       },
       (error) => {
         console.error('Error during registration:', error);

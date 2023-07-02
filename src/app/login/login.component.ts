@@ -18,11 +18,12 @@ export class LoginComponent {
       username: this.email,
       password: this.password
     };
-    console.log(requestBody);
+
   
     this.http.post(apiUrl, requestBody).subscribe(
-      (response) => {
-        console.log(response);
+      (response:any) => {
+        localStorage.setItem('userId', response.data._id);
+        localStorage.setItem('role',  response.data.role);
       },
       (error) => {
         console.error('Error during login:', error);
