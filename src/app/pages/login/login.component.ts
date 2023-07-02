@@ -1,34 +1,40 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
- email:string="";
- password:string="";
+
+  ngOnInit() {
+    if(this.logeado) {
+      window.location.replace('');
+    }
+  }
+  email: string = '';
+  password: string = '';
+  logeado: any = localStorage.getItem('userId')?.includes('64') ? true : false;
   constructor(private http: HttpClient) {}
 
-   login() {
+  login() {
     const apiUrl = 'http://localhost:3000/api/auth/login';
-  
+
     const requestBody = {
       username: this.email,
-      password: this.password
+      password: this.password,
     };
 
-  
     this.http.post(apiUrl, requestBody).subscribe(
-      (response:any) => {
+      (response: any) => {
         localStorage.setItem('userId', response.data._id);
-        localStorage.setItem('role',  response.data.role);
+        localStorage.setItem('role', response.data.role);
+        console.log(this.logeado)
+        window.location.replace('');
       },
       (error) => {
         console.error('Error during login:', error);
       }
     );
   }
-  
 }

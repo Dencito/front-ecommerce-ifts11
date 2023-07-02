@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +6,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(public router: Router) { }
 
   location:any= window.location.pathname == '/login' || window.location.pathname == '/register' ? true: false
   isMenuOpen: boolean = false;
@@ -16,9 +14,6 @@ export class NavbarComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  navigateTo() {
-    this.router.navigate(['']);
-  }
 
   logout() {
     // Lógica para cerrar sesión
