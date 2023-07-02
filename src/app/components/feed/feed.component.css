@@ -49,7 +49,7 @@
    */
 
    
-.container {
+/* .container {
   margin-top: 50px;
   margin-bottom: 45px;
 }
@@ -91,8 +91,31 @@
   display: block;
   object-fit: cover;
   height: 100%;
-}
+} */
   
   
+  .card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+  }
   
+  .card-header {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
+  }
   
+  .card-image {
+    position: relative;
+    height: 70%; 
+  }
+  
+  .card-img {
+    width: 100%;
+    display: block;
+    object-fit: cover; 
+    height: 300px;
+  
+  }

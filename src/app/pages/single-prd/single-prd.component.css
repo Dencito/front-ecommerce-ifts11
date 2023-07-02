@@ -16,9 +16,9 @@
   }
   
   .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
     /* Agrega estilos para la foto de perfil */
   }
   

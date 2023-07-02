@@ -19,16 +19,25 @@ export class FeedComponent {
 
 
     products: any
+    userName: any
 
   navigateToUserProfile(id: string) {
-    this.router.navigate(['product', id]);
+    this.router.navigate(['store', id]);
   }
   
 
   getProducts(){
     this.http.get(`http://localhost:3000/api/products`).subscribe(response=>{
       this.products=response;
+      for (const prod of this.products) {
+        this.http.get(`http://localhost:3000/api/auth/user/${prod?.userId}`).subscribe(response=>{
+      this.userName=response;
+      console.log(this.userName)
     });
+      }
+      
+    });
+    
   }
 
 
