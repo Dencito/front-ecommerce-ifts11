@@ -5,7 +5,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { CreateProductComponent } from './pages/create-product/create-product.component';
 import { EditProductComponent } from './pages/edit-product/edit-product.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { SinglePrdComponent } from './pages/single-prd/single-prd.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'create-product', component: CreateProductComponent},
   { path: 'edit-product/:id', component: EditProductComponent},
-  { path: 'store/:id', component: SinglePrdComponent},
+  { path: 'store/:id', component: UserDetailComponent},
 
 ];
 

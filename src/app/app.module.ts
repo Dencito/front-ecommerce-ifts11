@@ -12,7 +12,8 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FeedComponent } from './components/feed/feed.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { SinglePrdComponent } from './pages/single-prd/single-prd.component';
+import { ItemFeedComponent } from './components/item-feed/item-feed.component';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SinglePrdComponent } from './pages/single-prd/single-prd.component';
     FooterComponent,
     FeedComponent,
     NavbarComponent,
-    SinglePrdComponent,
+    ItemFeedComponent,
+    UserDetailComponent,
   ],
   imports: [
     BrowserModule,

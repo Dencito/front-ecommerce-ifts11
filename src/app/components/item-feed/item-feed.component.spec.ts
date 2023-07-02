@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SinglePrdComponent } from './single-prd.component';
+import { ItemFeedComponent } from './item-feed.component';
 
-describe('SinglePrdComponent', () => {
-  let component: SinglePrdComponent;
-  let fixture: ComponentFixture<SinglePrdComponent>;
+describe('ItemFeedComponent', () => {
+  let component: ItemFeedComponent;
+  let fixture: ComponentFixture<ItemFeedComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SinglePrdComponent]
+      declarations: [ItemFeedComponent]
     });
-    fixture = TestBed.createComponent(SinglePrdComponent);
+    fixture = TestBed.createComponent(ItemFeedComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
