@@ -13,10 +13,12 @@ export class UserDetailComponent {
     this.getProducts()
     this.route.params.subscribe(params => {
       const id = params['id']; 
+      this.getUser(id)
       
     });
   }
   products:any
+  userData:any
 
 
   getProducts() {
@@ -24,6 +26,16 @@ export class UserDetailComponent {
       .get(`http://localhost:3000/api/products`)
       .subscribe((response) => {
         this.products = response;
+      });
+  }
+
+  getUser(id:any) {
+    this.http
+      .get(`http://localhost:3000/api/auth/user/${id}`)
+      .subscribe((response) => {
+        this.userData = response;
+        this.userData = this.userData?.data
+        console.log(this.userData)
       });
   }
 }
