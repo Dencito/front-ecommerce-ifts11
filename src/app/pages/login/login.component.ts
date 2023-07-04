@@ -7,14 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class LoginComponent {
 
-  ngOnInit() {
-    if(this.logeado) {
-      window.location.replace('');
-    }
-  }
   email: string = '';
   password: string = '';
-  logeado: any = localStorage.getItem('userId')?.includes('64') ? true : false;
   constructor(private http: HttpClient) {}
 
   login() {
@@ -29,7 +23,6 @@ export class LoginComponent {
       (response: any) => {
         localStorage.setItem('userId', response.data._id);
         localStorage.setItem('role', response.data.role);
-        console.log(this.logeado)
         window.location.replace('');
       },
       (error) => {

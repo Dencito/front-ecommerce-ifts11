@@ -14,6 +14,7 @@ import { FeedComponent } from './components/feed/feed.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ItemFeedComponent } from './components/item-feed/item-feed.component';
 import { UserDetailComponent } from './pages/user-detail/user-detail.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { UserDetailComponent } from './pages/user-detail/user-detail.component';
     NavbarComponent,
     ItemFeedComponent,
     UserDetailComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

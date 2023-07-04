@@ -12,9 +12,9 @@
             <div class="row">
               <div class="col-lg-6">
                 <!-- Nombre de usuario -->
-                <h1 class="card-title profile-name">{{userData.username}}</h1>
+                <h1 class="card-title profile-name">{{userData?.username}}</h1>
                 <!-- Biografía -->
-                <p class="card-text profile-bio">{{userData.desc}}</p>
+                <p class="card-text profile-bio">{{userData?.desc}}</p>
               </div>
               <div class="col-lg-6 d-flex flex-column align-items-end">
                 <div class="followers mb-2">
@@ -83,6 +83,6 @@
 
 
 
-  <app-feed>
+  <app-feed [products]="products">
 
   </app-feed>
